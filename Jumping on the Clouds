@@ -1,0 +1,9 @@
+def jumpingOnClouds(c):
+    count = 0
+    loc = 0
+    while loc< len(c)-1:
+        if loc+2 <len(c) and c[loc+2]!=1:
+            loc+=1
+        loc+=1
+        count+=1
+    return count  
